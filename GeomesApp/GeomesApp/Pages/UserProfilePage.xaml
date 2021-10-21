@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GeomesApp.Pages.UserProfilePage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame Padding="0">
+                <Image Source="avatar.png"
+                       Aspect="AspectFill"
+                       HeightRequest="300"
+                       HorizontalOptions="FillAndExpand"
+                       VerticalOptions="FillAndExpand"
+                       BackgroundColor="WhiteSmoke"/>
+            </Frame>
+            <Frame Padding="10,5,10,5">
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Алексей"
+                           FontSize="Medium"/>
+                    <Label Text="20"
+                           FontSize="Medium"/>
+                </StackLayout>
+            </Frame>
+            <Frame Padding="10,5,10,5">
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Минут от Вас"
+                           FontSize="Default"
+                           FontAttributes="Bold"
+                           HorizontalTextAlignment="Start"/>
+                    <Label Text="13"
+                           FontSize="Default"
+                           HorizontalTextAlignment="Center"/>
+                </StackLayout>
+            </Frame>
+            <Frame Padding="10,5,10,5">
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Статус:"
+                           FontSize="Default"
+                           FontAttributes="Bold"
+                           HorizontalTextAlignment="Start"/>
+                    <Label Text="Погуляем?)0))"
+                           FontSize="Default"
+                           HorizontalTextAlignment="Center"/>
+                </StackLayout>
+            </Frame>
+            <Frame Padding="10,5,10,5">
+                <Label Text="https://vk.com/ahuet_che_proishodit"
+                       TextDecorations="Underline"
+                       FontSize="Small"
+                       TextColor="Blue"/>
+            </Frame>
+            <Frame Padding="10,5,10,5">
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Увлечения:"
+                           FontSize="Default"
+                           FontAttributes="Bold"
+                           HorizontalTextAlignment="Start"/>
+                    <Label Text="универ, анеме, игры"
+                           FontSize="Default"
+                           HorizontalTextAlignment="Center"/>
+                </StackLayout>
+            </Frame>
+            <StackLayout Orientation="Horizontal"
+                     Spacing="80"
+                     Padding="0,50,0,0">
+                <ImageButton x:Name="btnYes"
+                             Source="heart.png"
+                             Aspect="AspectFill"
+                             BackgroundColor="Transparent"
+                             WidthRequest="60"
+                             HeightRequest="60"
+                             HorizontalOptions="CenterAndExpand"
+                             Clicked="btnYes_Clicked"/>
+                <ImageButton x:Name="btnNo"
+                             Source="next.png"
+                             Aspect="AspectFill"
+                             BackgroundColor="Transparent"
+                             WidthRequest="60"
+                             HeightRequest="60"
+                             HorizontalOptions="CenterAndExpand"
+                             Clicked="btnNo_Clicked"/>
+            </StackLayout>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

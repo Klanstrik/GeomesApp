@@ -1,0 +1,14 @@
+﻿<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:local="clr-namespace:GeomesApp.Pages"
+       x:Class="GeomesApp.AppShell">
+    <ShellContent Title ="Wellcome" Route="WellcomePage" ContentTemplate="{DataTemplate local:WellcomePage}" />
+    <ShellContent Title ="Log in" Route="LoginPage" ContentTemplate="{DataTemplate local:LoginPage}" />
+    <ShellContent Title ="Sex" Route="RegSexPage" ContentTemplate="{DataTemplate local:RegSexPage}" />
+    <ShellContent Title ="Name" Route="RegNamePage" ContentTemplate="{DataTemplate local:RegNamePage}" />
+    <ShellContent Title ="Age" Route="RegAgePage" ContentTemplate="{DataTemplate local:RegAgePage}" />
+    <ShellContent Title ="Email" Route="RegEmailPage" ContentTemplate="{DataTemplate local:RegEmailPage}" />
+    <ShellContent Title ="Password" Route="RegPasswordPage" ContentTemplate="{DataTemplate local:RegPasswordPage}" />
+    <ShellContent Title ="Photo" Route="RegPhotoPage" ContentTemplate="{DataTemplate local:RegPhotoPage}" />
+    <ShellContent Title ="Ur profile" Route="UserProfilePage" ContentTemplate="{DataTemplate local:UserProfilePage}" />
+</Shell>

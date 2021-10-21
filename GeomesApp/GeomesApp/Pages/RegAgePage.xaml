@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GeomesApp.Pages.RegAgePage">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical"
+                     Spacing="40"
+                     Padding="20,20,20,20"
+                     HorizontalOptions="CenterAndExpand"
+                     VerticalOptions="CenterAndExpand">
+            <Label Text="Укажи дату своего рождения"
+                   FontSize="Medium"
+                   TextColor="Black"/>
+            <Label Text="Пользователям будет виден твой возвраст"
+                   FontSize="Medium"
+                   TextColor="DarkGray"/>
+            <StackLayout Orientation="Vertical"
+                         Spacing="80"
+                         HorizontalOptions="CenterAndExpand"
+                         VerticalOptions="CenterAndExpand">
+                <DatePicker x:Name="dataPicker"
+                            Format="D"
+                            DateSelected="DatePicker_DateSelected">
+                    <DatePicker.MinimumDate>1/01/1920</DatePicker.MinimumDate>
+                    <DatePicker.MaximumDate>10/10/2003</DatePicker.MaximumDate>
+                </DatePicker>
+                <Button x:Name="btnContinue"
+                        Text="Продолжить"
+                        HeightRequest="50"
+                        WidthRequest="300"
+                        TextColor="LimeGreen"
+                        CornerRadius="10"
+                        Clicked="btnContinue_Clicked"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

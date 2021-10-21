@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GeomesApp.Pages.LoginPage">
+   <ContentPage.Content>
+    <Grid>
+        <BoxView x:Name="BdGradient">
+            <BoxView.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color ="#50c878" Offset="0.01"/>
+                    <GradientStop Color ="#00ffff" Offset="1.0 "/>
+                </LinearGradientBrush>
+            </BoxView.Background>
+        </BoxView>
+        
+        
+        
+        <StackLayout Orientation="Vertical"
+                     Spacing="40"
+                     Padding="20,20,20,20"
+                     VerticalOptions="CenterAndExpand">
+            
+            <Label Text="Geomes"
+                   TextColor="Azure"
+                   FontSize="Large"
+                   FontAttributes="Bold"
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="CenterAndExpand"/>
+            <Entry Placeholder="Email"
+                   Keyboard="Email"/>
+            <Entry Placeholder="Пароль"
+                   IsPassword="True"/>
+            <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="CenterAndExpand"
+                         Spacing="20">
+                <Button x:Name="btnReg"
+                        Text="Регистрация"
+                        TextColor="White"
+                        FontSize="20"
+                        BackgroundColor="Black"
+                        CornerRadius="5"
+                        Opacity="0.8"
+                        Clicked="btnReg_Clicked"/>
+                <Button x:Name="btnLogin"
+                        Text="Вход"
+                        TextColor="White"
+                        FontSize="20"
+                        BackgroundColor="Black"
+                        CornerRadius="5"
+                        Opacity="0.8"
+                        Clicked="btnLogin_Clicked"/>
+            </StackLayout>
+
+        </StackLayout>
+   
+    </Grid>
+   </ContentPage.Content>
+</ContentPage>

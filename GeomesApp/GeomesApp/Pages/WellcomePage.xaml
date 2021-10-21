@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GeomesApp.Pages.WellcomePage">
+    <ContentPage.Content>
+       <Grid>
+          <BoxView x:Name="BdGradient">
+                <BoxView.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color ="#50c878" Offset="0.01"/>
+                        <GradientStop Color ="#00ffff" Offset="1.0 "/>
+                    </LinearGradientBrush>
+                </BoxView.Background>
+            </BoxView>
+          <StackLayout Orientation="Vertical"
+                     Spacing="60"
+                     Padding="10,20,10,20"
+                     VerticalOptions="CenterAndExpand">
+            <Label Text="Geomes"
+                   TextColor="Azure"
+                   FontSize="56"
+                   FontAttributes="Bold"
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"/>
+            <StackLayout Orientation="Vertical"
+                         HorizontalOptions="CenterAndExpand"
+                         VerticalOptions="CenterAndExpand"
+                         Spacing="20">
+                <Button x:Name="btnGoogle"
+                        TextColor="White"
+                        Text="Войти через Google"
+                        HeightRequest="50"
+                        WidthRequest="300"
+                        FontSize="Medium"
+                        CornerRadius="10"
+                        Opacity="0.6"
+                        Clicked="btnGoogle_Clicked"/>
+                <Button x:Name="btnVK"
+                        TextColor="White"
+                        Text="Войти через VK"
+                        HeightRequest="50"
+                        WidthRequest="300"
+                        FontSize="Medium"
+                        CornerRadius="10"
+                        Opacity="0.6"
+                        Clicked="btnVK_Clicked"/>
+                <Button x:Name="btnEmail"
+                        TextColor="White"
+                        Text="Войти через Email"
+                        HeightRequest="50"
+                        WidthRequest="300"
+                        FontSize="Medium"
+                        CornerRadius="10"
+                        Opacity="0.6"
+                        Clicked="btnEmail_Clicked"/>
+                
+            </StackLayout>
+           </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
