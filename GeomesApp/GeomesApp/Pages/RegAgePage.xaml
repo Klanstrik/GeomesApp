@@ -9,7 +9,7 @@
                      HorizontalOptions="CenterAndExpand"
                      VerticalOptions="CenterAndExpand">
             <Label Text="Укажи дату своего рождения"
-                   FontSize="Medium"
+                   FontSize="Large"
                    TextColor="Black"/>
             <Label Text="Пользователям будет виден твой возвраст"
                    FontSize="Medium"
@@ -28,7 +28,9 @@
                         Text="Продолжить"
                         HeightRequest="50"
                         WidthRequest="300"
-                        TextColor="LimeGreen"
+                        FontSize="Large"
+                        BackgroundColor="#28E4BC"
+                        TextColor="White"
                         CornerRadius="10"
                         Clicked="btnContinue_Clicked"/>
             </StackLayout>
