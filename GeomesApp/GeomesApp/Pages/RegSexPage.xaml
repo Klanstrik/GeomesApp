@@ -9,31 +9,33 @@
                      HorizontalOptions="CenterAndExpand"
                      VerticalOptions="CenterAndExpand">
             <Label Text="Привет, давай знакомиться"
-                   FontSize="Medium"
+                   FontSize="Large"
                    TextColor="Black"/>
             <Label Text="Ты..."
-                   FontSize="Medium"
+                   FontSize="Large"
                    TextColor="Black"/>
             <StackLayout Orientation="Horizontal"
                          Spacing="60"
                          VerticalOptions="CenterAndExpand"
                          HorizontalOptions="CenterAndExpand">
-              
-                    <Button x:Name="btnMale"
+                <Button x:Name="btnMale"                    
                         Text="Парень"
                         HeightRequest="50"
                         WidthRequest="150"
+                        BackgroundColor="#28E4BC"
                         FontSize="Medium"
                         CornerRadius="10"
                         Clicked="btnMale_Clicked"/>
-                    <Button x:Name="btnFemale"
+                <Button x:Name="btnFemale"
                         Text="Девушка"
                         HeightRequest="50"
                         WidthRequest="150"
+                        BackgroundColor="#28E4BC"
                         FontSize="Medium"
                         CornerRadius="10"
                         Clicked="btnFemale_Clicked"/>
-              
+
+
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

@@ -9,7 +9,7 @@
                      HorizontalOptions="CenterAndExpand"
                      VerticalOptions="CenterAndExpand">
             <Label Text="Тебя зовут..."
-                   FontSize="Medium"
+                   FontSize="Large"
                    TextColor="Black"/>
             <StackLayout Orientation="Vertical"
                          Spacing="80"
@@ -19,9 +19,11 @@
                        Keyboard="Chat"/>
                 <Button x:Name="btnContinue"
                         Text="Продолжить"
+                        FontSize="Large"
+                        BackgroundColor="#28E4BC"
                         HeightRequest="50"
                         WidthRequest="300"
-                        TextColor="LimeGreen"
+                        TextColor="White"
                         CornerRadius="10"
                         Clicked="btnContinue_Clicked"/>
             </StackLayout>

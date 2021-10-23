@@ -9,7 +9,7 @@
                      HorizontalOptions="CenterAndExpand"
                      VerticalOptions="CenterAndExpand">
             <Label Text="Укажи свой почтовый адрес"
-                   FontSize="Medium"
+                   FontSize="Large"
                    TextColor="Black"/>
             <Label Text="Мы отправим письмо для подтверждения регистрации"
                    FontSize="Medium"
@@ -21,9 +21,11 @@
                        Keyboard="Email"/>
                 <Button x:Name="btnContinue"
                         Text="Продолжить"
+                        FontSize="Large"
                         HeightRequest="50"
+                        BackgroundColor="#28E4BC"
                         WidthRequest="300"
-                        TextColor="LimeGreen"
+                        TextColor="White"
                         CornerRadius="10"
                         Clicked="btnContinue_Clicked"/>
             </StackLayout>

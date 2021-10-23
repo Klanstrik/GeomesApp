@@ -29,9 +29,11 @@
             </StackLayout>
             <Button x:Name="btnContinue"
                         Text="Продолжить"
+                    FontSize="Large"
+                        BackgroundColor="#28E4BC"
                         HeightRequest="50"
                         WidthRequest="300"
-                        TextColor="LimeGreen"
+                        TextColor="White"
                         CornerRadius="10"
                         Clicked="btnContinue_Clicked"/>
         </StackLayout>
